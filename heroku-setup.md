@@ -4,6 +4,8 @@ El objetivo final que perseguimos con el proceso de pasar a producción (desplie
 
 Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos de tu servidor y obteniendo así la URL que permitirá accederlo.
 
+<hr><br>
+
 ## 1.- Elige el nombre de tu aplicación
 
 Tú elegirás qué nombre deseas para tus aplicación, aunque en adelante usaremos para esta documentación el nombre `donuts-planet` como ejemplo, lo que daría lugar a la URL `https://donuts-planet.herokuapp.com/`. 
