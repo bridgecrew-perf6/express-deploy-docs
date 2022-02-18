@@ -4,7 +4,7 @@ El objetivo final que perseguimos con el proceso de pasar a producción (desplie
 
 Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos de tu servidor y obteniendo así la URL que permitirá accederlo.
 
-## Elige el nombre de tu aplicación
+## 1.- Elige el nombre de tu aplicación
 
 Tú elegirás qué nombre deseas para tus aplicación, aunque en adelante usaremos para esta documentación el nombre `donuts-planet` como ejemplo, lo que daría lugar a la URL `https://donuts-planet.herokuapp.com/`. 
 
@@ -12,11 +12,13 @@ Si tu proyecto se llama, por ejemplo, _Retaurants Locator_, sería ideal elegir 
 
 No llames a tu aplicación `donuts-planet`. Este nombre sólo lo usaremos a efectos ejemplificativos, aparte que es tan molón que ya está cogido.
 
-## Registro 
+## 2.- Registro 
 
 Accede a [Heroku](https://www.heroku.com/) y realiza el proceso de registro con tus datos personales.
 
-## Creación de la app de Heroku
+<hr><br>
+
+## 3.- Creación de la app de Heroku
 
 Para alojar una aplicación de NodeJS es necesario antes crear y configurar la aplicación en Heroku. Para ello, selecciona **Create new app** en el menú desplegable **New** de la esquina superior derecha:
 <img width="788" alt="Captura de pantalla 2022-02-18 a las 7 52 55" src="https://user-images.githubusercontent.com/46670724/154638743-12a97ec8-f61d-4507-9f3b-b9a5da237635.png">
@@ -24,7 +26,9 @@ Para alojar una aplicación de NodeJS es necesario antes crear y configurar la a
 Indica a continuación el nombre de tu aplicación (recuerda: será tu futuro dominio) y selecciona **Create app**:
 <img width="1116" alt="Captura de pantalla 2022-02-18 a las 7 53 55" src="https://user-images.githubusercontent.com/46670724/154638928-a476f6d6-deb5-4178-918f-cacbab5e2ec7.png">
 
-## Conexión de la app de Heroku con el repositorio de Github
+<hr><br>
+
+## 4.- Conexión de la app de Heroku con el repositorio de Github
 
 En la pestaña **Deploy** selecciona la opción **Github: connect to Github** y haz click en el botón **Connect to Github**:
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 7 54 58" src="https://user-images.githubusercontent.com/46670724/154639055-b1d22a00-48c5-40f3-942d-746e9fb6fd36.png">
@@ -38,13 +42,16 @@ Indica el nombre del repo que aloja tu proyecto y confirma la conexión haciendo
 Una vez conectado, selecciona **Enable automatic deploys**:
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 26 55" src="https://user-images.githubusercontent.com/46670724/154640035-fc791a6b-ba50-4eb5-a144-9163bc024585.png">
 
+<hr><br>
 
-## Agregación de variables de entorno
+## 5.- Agregación de variables de entorno
 
 Debido a que tu archivo `.env` no será subido, debes dar de alta manualmente cada variable de entorno a excepción de `PORT`. Para ello, accede a la pestaña **Settings** y, enla sección **Config vars** añade una por una todas las variables presentes en tu `.env`:
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 28 17" src="https://user-images.githubusercontent.com/46670724/154641152-0c48acd5-0e43-4f87-bf83-a17afc89e303.png">
 
-## Deploy!
+<hr><br>
+
+## 6.- Deploy!
 
 En la pestaña Settings, asegúrate de en la sección Buildpacks está seleccionado **NodeJS** (esto se verá como `heroku/node`). De lo contrario, añádelo como Buildpack:
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 48 29" src="https://user-images.githubusercontent.com/46670724/154640454-fd12a0f5-d265-43a0-915c-ced1c2aaa4ba.png">
