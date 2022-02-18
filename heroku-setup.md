@@ -1,6 +1,6 @@
 # Registro y creación de aplicación en Heroku
 
-El objetivo final que perseguimos con el proceso de pasar a producción (despliegue, _deploy_, etc) es disponer de nuestra aplicación local de Express subida a un servidor en la nube y accesible mediante una URL pública como `https://myserver.herokuapp.com/`.
+El objetivo final que perseguimos con el proceso de pasar a producción (despliegue, _deploy_, etc) es disponer de nuestra aplicación local de Express subida a un servidor en la nube y accesible mediante una URL pública como `https://donuts-planet.herokuapp.com/`.
 
 Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos de tu servidor y obteniendo así la URL que permitirá accederlo.
 
@@ -10,46 +10,29 @@ Tú elegirás qué nombre deseas para tus aplicación, aunque en adelante usarem
 
 Si tu proyecto se llama, por ejemplo, _Retaurants Locator_, sería ideal elegir un nombre como `restaurants-locator`, lo que dará lugar a la URL `https://restaurants-locator.herokuapp.com/`. 
 
-No llames a tu aplicación `donuts-planet`. Este nombre sólo lo usaremos a efectos ejemplificativos.
+No llames a tu aplicación `donuts-planet`. Este nombre sólo lo usaremos a efectos ejemplificativos, aparte que es tan molón que ya está cogido.
 
 ## Registro 
 
 Accede a [Heroku](https://www.heroku.com/) y realiza el proceso de registro con tus datos personales.
 
-Todos los demás pasos los realizaremos desde la terminal, por lo que no es necesario continuar ningún proceso en la página web.
+## Creación de la app de Heroku
 
-## Instalación de Heroku CLI
-Para hacer uso de los comandos de Heroku en tu terminal, es necesario realizar la instalación de la Interfaz de Línea de Comandos (CLI) de Heroku, accediendo a [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) y siguiendo las instrucciones de instalación. 
-Esto habilitará el uso de [todos los comandos de Heroku](https://devcenter.heroku.com/articles/heroku-cli-commands) en nuestra terminal.
+Para alojar una aplicación de NodeJS es necesario antes crear y configurar la aplicación en Heroku. Para ello, selecciona **Create new app** en el menú desplegable **New** de la esquina superior derecha:
+<img width="788" alt="Captura de pantalla 2022-02-18 a las 7 52 55" src="https://user-images.githubusercontent.com/46670724/154638743-12a97ec8-f61d-4507-9f3b-b9a5da237635.png">
 
-## Inicio de sesión Heroku CLI
-Para identificarnos en Heroku CLI y acceder a nuestra cuenta de Heroku desde la terminal, usaremos el comando `heroku login` siguiendo los pasos. 
+Indica a continuación el nombre de tu aplicación (recuerda: será tu futuro dominio) y selecciona **Create app**:
+<img width="1116" alt="Captura de pantalla 2022-02-18 a las 7 53 55" src="https://user-images.githubusercontent.com/46670724/154638928-a476f6d6-deb5-4178-918f-cacbab5e2ec7.png">
 
-Podremos cerrar la sesión cuando necesitemos mediante el comando `heroku logout`.
+## Conexión de la app de Heroku con el repositorio de Github
 
-## Creación de aplicación en Heroku
+En la pestaña **Deploy** selecciona la opción **Github: connect to Github** y haz click en el botón **Connect to Github**:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 7 54 58" src="https://user-images.githubusercontent.com/46670724/154639055-b1d22a00-48c5-40f3-942d-746e9fb6fd36.png">
 
-Crearemos ahora una aplicación de Heroku donde alojar nuestro servidor de ExpressJS. 
-    
-1. Accede mediante la terminal a la raíz de tu aplicación, donde se encuentra su `package.json`, e introduce el comando `heroku create <appname>`, siendo `<appname>` el nombre elegido para tu aplicación. Ejemplo:
+Permite que Heroku se conecte a tu Github haciendo click en **Authorize Heroku**:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 7 55 39" src="https://user-images.githubusercontent.com/46670724/154639385-39ea1ed0-1db8-4a4a-a3f4-7696fc1ad30e.png">
 
-   ````
-   heroku create donuts-planet
-   ````
+Indica el nombre del repo que aloja tu proyecto y confirma la conexión:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 00 41" src="https://user-images.githubusercontent.com/46670724/154639461-d2fb82c4-227a-440c-928e-28f08fb0dbbc.png">
 
-2. Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku mediante el comando 
-
-   ````
-   heroku git:remote -a donuts-planet
-   ````
-
-3. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
-
-   ````
-   heroku apps:info
-   ````
- 
-Una vez que hayas procedido, podrás acceder a tu URL mediante `heroku open`. Si bien aún no has subido tus archivos, esa URL permanecerá disponible para cuando procedamos.
-
-Recuerda que el número máximo de aplicaciones que podrás crear en una cuenta de Heroku sin indicar los datos de tu tarjeta de crédito es de 5 aplicaciones.
 
