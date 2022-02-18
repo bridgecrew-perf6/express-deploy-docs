@@ -10,6 +10,8 @@ El paso a producción o _deploy_ supone subir tu aplicación (tanto la BBDD de M
 
 Esto lo haremos en dos pasos:
 
-**1.- Base de datos**: hacer el paso a producción de la base de datos (MongoDB) desde el entorno local a una base de datos remota alojada en MongoDB Atlas ([link](https://github.com/german-alvarez-dev/express-deploy-docs/blob/main/database-deploy.md)).
+### **1.- Base de datos**
+Hacer el paso a producción de la base de datos (MongoDB) desde el entorno local a una base de datos remota alojada en MongoDB Atlas ([link](https://github.com/german-alvarez-dev/express-deploy-docs/blob/main/database-deploy.md)).
   
-**2.- Servidor**: hacer el paso a producción de la aplicación (ExpressJS) desde tu servidor local a una aplicación remota alojada en Heroku ([link](https://github.com/german-alvarez-dev/express-deploy-docs/blob/main/application-deploy.md))
+### **2.- Servidor**
+Hacer el paso a producción de la aplicación (ExpressJS) desde tu servidor local a una aplicación remota alojada en Heroku ([link](https://github.com/german-alvarez-dev/express-deploy-docs/blob/main/application-deploy.md))
