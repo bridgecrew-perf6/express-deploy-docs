@@ -57,7 +57,7 @@ Debido a que tu archivo `.env` no será subido, debes dar de alta manualmente ca
 
 ## 6.- Deploy! <br>
 
-En la pestaña Settings, asegúrate de en la sección Buildpacks está seleccionado **NodeJS** (esto se verá como `heroku/node`). De lo contrario, añádelo como Buildpack: <br><br>
+En la pestaña Settings, asegúrate de en la sección Buildpacks está seleccionado **NodeJS** (esto se verá como `heroku/nodejs`). De lo contrario, añádelo como Buildpack: <br><br>
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 48 29" src="https://user-images.githubusercontent.com/46670724/154640454-fd12a0f5-d265-43a0-915c-ced1c2aaa4ba.png">
 
 Accede de nuevo a la pestaña Deploy y selecciona, al final de la misma, el botón **Deploy branch**: <br><br>
