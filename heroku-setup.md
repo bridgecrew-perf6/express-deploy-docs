@@ -32,7 +32,26 @@ En la pestaña **Deploy** selecciona la opción **Github: connect to Github** y 
 Permite que Heroku se conecte a tu Github haciendo click en **Authorize Heroku**:
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 7 55 39" src="https://user-images.githubusercontent.com/46670724/154639385-39ea1ed0-1db8-4a4a-a3f4-7696fc1ad30e.png">
 
-Indica el nombre del repo que aloja tu proyecto y confirma la conexión:
+Indica el nombre del repo que aloja tu proyecto y confirma la conexión haciendo click en el botón **Connect**:
 <img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 00 41" src="https://user-images.githubusercontent.com/46670724/154639461-d2fb82c4-227a-440c-928e-28f08fb0dbbc.png">
+
+Una vez conectado, selecciona **Enable automatic deploys**:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 26 55" src="https://user-images.githubusercontent.com/46670724/154640035-fc791a6b-ba50-4eb5-a144-9163bc024585.png">
+
+
+## Agregación de variables de entorno
+
+Debido a que tu archivo `.env` no será subido, debes dar de alta manualmente cada variable de entorno a excepción de `PORT`. Para ello, accede a la pestaña **Settings** y, enla sección **Config vars** añade una por una todas las variables presentes en tu `.env`:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 28 17" src="https://user-images.githubusercontent.com/46670724/154641152-0c48acd5-0e43-4f87-bf83-a17afc89e303.png">
+
+## Deploy!
+
+En la pestaña Settings, asegúrate de en la sección Buildpacks está seleccionado **NodeJS** (esto se verá como `heroku/node`). De lo contrario, añádelo como Buildpack:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 48 29" src="https://user-images.githubusercontent.com/46670724/154640454-fd12a0f5-d265-43a0-915c-ced1c2aaa4ba.png">
+
+Accede de nuevo a la pestaña Deploy y selecciona, al final de la misma, el botón **Deploy branch**:
+<img width="1411" alt="Captura de pantalla 2022-02-18 a las 8 50 23" src="https://user-images.githubusercontent.com/46670724/154640650-17315830-a147-479a-a834-3b804b9e81d8.png">
+
+Ya puedes acceder a la URL de tu proyecto. ¡Enhorabuena!
 
 
