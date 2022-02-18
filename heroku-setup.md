@@ -12,6 +12,8 @@ Si tu proyecto se llama, por ejemplo, _Retaurants Locator_, sería ideal elegir 
 
 No llames a tu aplicación `donuts-planet`. Este nombre sólo lo usaremos a efectos ejemplificativos, aparte que es tan molón que ya está cogido.
 
+<hr><br>
+
 ## 2.- Registro 
 
 Accede a [Heroku](https://www.heroku.com/) y realiza el proceso de registro con tus datos personales.
