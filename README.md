@@ -6,7 +6,9 @@ Describir el proceso para deplegar a producción en [Heroku](https://www.heroku.
 
 ## Fases de paso a producción
 
-El paso a producción o _deploy_ supone subir tu aplicación (tanto la BBDD de MongoDB como la aplicación de Express) a un servidor real que pueda ser accedido desde cualquier navegador. Esto, en esencia, supondrá que los datos y funcionalidades desde los que ahora accedes a través de `http://localhost:5005` serán servidos desde un dominio real como podría ser `https://www.donuts-planet.herokuapp.com`.
+El paso a producción o _deploy_ supone subir tu aplicación (tanto la BBDD de MongoDB como la aplicación de ExpressJS) a un servidor real que pueda ser accedido desde cualquier navegador. 
+
+Esto, en esencia, supondrá que los datos y funcionalidades desde los que ahora accedes a través de `http://localhost:5005` serán servidos desde un dominio real con un dominio como podría ser `https://www.donuts-planet.herokuapp.com`.
 
 Para pasar a producción nuestra aplicación debemos _deployar_ los dos bloques que la componen:
 
