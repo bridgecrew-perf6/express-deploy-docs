@@ -4,6 +4,8 @@ El objetivo final que perseguimos con el proceso de pasar a producción (desplie
 
 Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos de tu servidor y obteniendo así la URL que permitirá accederlo.
 
+🔔 Antes de comenzar __verifica que has respetado de manera exacta los nombres de los archvios al importarlos unos en otros__ ya que, por ejemplo, un modelo denominado `Whatever.model.js` puede ser importado en local como `whatever.model` pero tras el deploy fallará ya que es case-sensitive.
+
 <hr><br>
 
 ## 1.- Elige el nombre de tu aplicación <br>
